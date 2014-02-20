@@ -3,4 +3,4 @@ if page.isCurrent
         a #{page.page}
 else
     li
-        a(href='#{baseUrl}?page=#{page.page}') #{page.page}
+        a(href='#{baseUrl}?page=#{page.page}#{query}') #{page.page}
