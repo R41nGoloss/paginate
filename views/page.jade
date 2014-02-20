@@ -1,5 +1,6 @@
-li
-	if page.isCurrent
-		a.active #{page.page}
-	else
-		a(href='#{baseUrl}?page=#{page.page}') #{page.page}
+if page.isCurrent
+    li.active
+        a #{page.page}
+else
+    li
+        a(href='#{baseUrl}?page=#{page.page}') #{page.page}
